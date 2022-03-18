@@ -12,7 +12,7 @@ namespace JsonResponder.Controllers
         [HttpPost]
         public async Task<IActionResult> Index()
         {
-            string rawContent;
+            string rawContent, randomChange;
             using (var contentStream = this.Request.Body)
             {
                 using (var sr = new StreamReader(contentStream))
